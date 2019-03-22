@@ -1,4 +1,5 @@
 #include "Input.h"
+#include "Demo.h"
 #include "fl/Headers.h"
 #include <SFML/Graphics.hpp>
 
@@ -22,14 +23,13 @@
 //	system("PAUSE");
 //}
 
-using namespace std;
-
 //Completely reworked project. Only borrowing the Input class from previous submission.
 
 int main()
 {
 	sf::RenderWindow window(sf::VideoMode(600, 300), "Pong Server");
 	Input input;
+	Demo demo(&window, &input);
 	sf::Clock clock;
 	float deltaTime;
 
@@ -59,6 +59,8 @@ int main()
 		}
 
 		deltaTime = clock.restart().asSeconds();
-
+		demo.handleInput(deltaTime);
+		demo.update(deltaTime);
+		demo.render();
 	}
 }
