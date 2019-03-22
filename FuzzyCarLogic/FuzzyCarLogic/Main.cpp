@@ -1,3 +1,4 @@
+#include "Input.h"
 #include "fl/Headers.h"
 #include <SFML/Graphics.hpp>
 
@@ -28,7 +29,7 @@ using namespace std;
 int main()
 {
 	sf::RenderWindow window(sf::VideoMode(600, 300), "Pong Server");
-
+	Input input;
 	sf::Clock clock;
 	float deltaTime;
 

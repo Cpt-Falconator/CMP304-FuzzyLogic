@@ -1,0 +1,11 @@
+Week Starting 11/03/19
+After the previous few weeks of lectorials and learning the fundamentals of MatLab, I finally started work on the actual coursework this week, by creating the Fuzzy Inference System through the MatLab toolbox. I'm using 5 different 'states' for the logic, being Far left, Close Left (and the other two for the oposite side) as well as Neutral.
+Upon closer inspection of the FIS file, I feel like If I'm confident enough, I could work on editing values outwith the labs, since the .fis file can be manipulated through a text editor (such as notepad) and is quite intuative for its saved values and logic.
+As for an API for the creation, I (as well as a few other students) are looking into the possibility of using FuzzyLite (https://fuzzylite.com/) as it is freeware and lightweight to get the job done.
+
+
+
+Week starting 18/03/19
+This week I've started my progress on the actual coding part of the application,
+I successfully set up a Git repository, created the main loop function and added in re-used Input Class code.
+From here I plan to create the main game loop as my next firs task, then add in the FIS system, probably getting it functioning in the Console. From here I'll then add the Graphical User Interface for a better grade.
