@@ -89,7 +89,12 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)/$(SolutionName)/SFML/include;$(SolutionDir)/$(SolutionName)\fl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link>
+      <AdditionalDependencies>release/bin/fuzzylite.lib;SFML/lib/sfml-main-d.lib;SFML/lib/sfml-graphics-d.lib;SFML/lib/sfml-system-d.lib;SFML/lib/sfml-window-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)/$(SolutionName)/SFML-2.5.1/lib;$(SolutionDir)/$(SolutionName)\fl;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>

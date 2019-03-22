@@ -1,6 +1,5 @@
 #include "Input.h"
 #include "Demo.h"
-#include "fl/Headers.h"
 #include <SFML/Graphics.hpp>
 
 //For Loading in FIS file.
@@ -27,7 +26,7 @@
 
 int main()
 {
-	sf::RenderWindow window(sf::VideoMode(600, 300), "Pong Server");
+	sf::RenderWindow window(sf::VideoMode(800, 600), "Furry Car Demo");
 	Input input;
 	Demo demo(&window, &input);
 	sf::Clock clock;

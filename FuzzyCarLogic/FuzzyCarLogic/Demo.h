@@ -1,6 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include "Input.h"
+#include "fl/Headers.h"
 
 class Demo
 {
@@ -17,6 +18,22 @@ private:
 
 	Input * input;
 	sf::RenderWindow* window;
+
+	sf::RectangleShape bar;
+	sf::Sprite car;
+	sf::Texture carTex;
+
+	sf::Text outputs;
+	sf::Text inputs;
+	sf::Text in_distance;
+	sf::Text in_roc;
+	sf::Text out_velocity;
+	sf::Font font;
+
+	fl::Engine* fisEngine;
+	fl::OutputVariable* fisOutput;
+
+	float roc;
 
 };
 
