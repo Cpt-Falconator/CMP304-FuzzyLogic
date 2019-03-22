@@ -76,11 +76,11 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)/$(SolutionName)/SFML-2.5.1/include;$(SolutionDir)/$(SolutionName)\fl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)/$(SolutionName)/SFML/include;$(SolutionDir)/$(SolutionName)\fl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(SolutionDir)/$(SolutionName)/SFML-2.5.1/lib;$(SolutionDir)/$(SolutionName)\fl;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>release/bin/fuzzylite.lib;SFML-2.5.1/lib/sfml-main-d.lib;SFML-2.5.1/lib/sfml-graphics-d.lib;SFML-2.5.1/lib/sfml-system-d.lib;SFML-2.5.1/lib/sfml-window-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>release/bin/fuzzylite.lib;SFML/lib/sfml-main-d.lib;SFML/lib/sfml-graphics-d.lib;SFML/lib/sfml-system-d.lib;SFML/lib/sfml-window-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
