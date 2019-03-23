@@ -40,7 +40,7 @@ Demo::Demo(sf::RenderWindow* hwnd, Input* in)
 	in_distance.setOutlineColor(sf::Color::Black);
 	in_distance.setOutlineThickness(2);
 
-	in_roc.setString("Rate of Chance = ");
+	in_roc.setString("Rate of Change = ");
 	in_roc.setPosition(1, 41);
 	in_roc.setCharacterSize(15);
 	in_roc.setFont(font);
@@ -96,13 +96,13 @@ void Demo::update(float dt)
 	fisEngine->process();
 	fisOutput = fisEngine->getOutputVariable(0);
 
-	roc = fisOutput->getValue();
+	roc += fisOutput->getValue();
 
-	car.move(sf::Vector2f(roc * dt * 10000, 0));
+	car.move(sf::Vector2f(roc, 0));
 
 	in_distance.setString("Distance = " + std::to_string((car.getPosition().x - bar.getPosition().x) / window->getSize().x));
 	in_roc.setString("Rate of Chance = " + std::to_string(roc));
-	out_velocity.setString("Velocity = " + std::to_string(roc));
+	out_velocity.setString("Velocity = " + std::to_string(fisOutput->getValue()));
 	//Do update things
 }
 
