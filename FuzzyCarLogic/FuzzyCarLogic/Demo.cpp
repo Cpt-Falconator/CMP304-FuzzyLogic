@@ -90,7 +90,7 @@ void Demo::handleInput(float dt)
 //Demo update function.
 void Demo::update(float dt)
 {
-	fisEngine->getInputVariable(0)->setValue((car.getPosition().x - bar.getPosition().x) / window->getSize().x);
+	fisEngine->getInputVariable(0)->setValue((car.getPosition().x - bar.getPosition().x) / 80);
 	fisEngine->getInputVariable(1)->setValue(roc);
 
 	fisEngine->process();
