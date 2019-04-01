@@ -72,7 +72,14 @@ void Demo::handleInput(float dt)
 	{
 		if (bar.getPosition().x > (bar.getSize().x / 2))
 		{
-			bar.move(sf::Vector2f(-250 * dt, 0));
+			if (input->isKeyDown(sf::Keyboard::Up))
+			{
+				bar.move(sf::Vector2f(-1000 * dt, 0));
+			}
+			else
+			{
+				bar.move(sf::Vector2f(-250 * dt, 0));
+			}
 		}
 			//Move something Left
 	}
@@ -80,7 +87,14 @@ void Demo::handleInput(float dt)
 	{
 		if (bar.getPosition().x < (window->getSize().x - (bar.getSize().x / 2)))
 		{
-			bar.move(sf::Vector2f(250 * dt, 0));
+			if (input->isKeyDown(sf::Keyboard::Up))
+			{
+				bar.move(sf::Vector2f(1000 * dt, 0));
+			}
+			else
+			{
+				bar.move(sf::Vector2f(250 * dt, 0));
+			}
 		}
 		
 		//Move something Right
@@ -101,7 +115,7 @@ void Demo::update(float dt)
 	car.move(sf::Vector2f(roc, 0));
 
 	in_distance.setString("Distance = " + std::to_string((car.getPosition().x - bar.getPosition().x) / window->getSize().x));
-	in_roc.setString("Rate of Chance = " + std::to_string(roc));
+	in_roc.setString("Rate of Change = " + std::to_string(roc));
 	out_velocity.setString("Velocity = " + std::to_string(fisOutput->getValue()));
 	//Do update things
 }
