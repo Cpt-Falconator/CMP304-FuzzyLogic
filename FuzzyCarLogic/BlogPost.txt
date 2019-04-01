@@ -9,3 +9,9 @@ Week starting 18/03/19
 This week I've started my progress on the actual coding part of the application,
 I successfully set up a Git repository, created the main loop function and added in re-used Input Class code.
 From here I plan to create the main game loop as my next firs task, then add in the FIS system, probably getting it functioning in the Console. From here I'll then add the Graphical User Interface for a better grade.
+
+Week Starting 25/03/19
+'Finished' development of the application. Currently complete with Stage 1 and 2 implemented.
+Stage 1 features a console hard-output for data entered.
+Stage 2 features an interactive GUI element for dynamic input.
+Focusing documentation over the holidays.
