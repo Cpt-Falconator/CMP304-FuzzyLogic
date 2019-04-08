@@ -114,10 +114,9 @@ void Demo::update(float dt)
 
 	car.move(sf::Vector2f(roc, 0));
 
-	in_distance.setString("Distance = " + std::to_string((car.getPosition().x - bar.getPosition().x) / window->getSize().x));
+	in_distance.setString("Distance = " + std::to_string((car.getPosition().x - bar.getPosition().x) / 80));
 	in_roc.setString("Rate of Change = " + std::to_string(roc));
 	out_velocity.setString("Velocity = " + std::to_string(fisOutput->getValue()));
-	//Do update things
 }
 
 //Standard render function
