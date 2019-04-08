@@ -74,7 +74,7 @@ void Demo::handleInput(float dt)
 		{
 			if (input->isKeyDown(sf::Keyboard::Up))
 			{
-				bar.move(sf::Vector2f(-1000 * dt, 0));
+				bar.move(sf::Vector2f(-1500 * dt, 0));
 			}
 			else
 			{
@@ -89,7 +89,7 @@ void Demo::handleInput(float dt)
 		{
 			if (input->isKeyDown(sf::Keyboard::Up))
 			{
-				bar.move(sf::Vector2f(1000 * dt, 0));
+				bar.move(sf::Vector2f(1500 * dt, 0));
 			}
 			else
 			{
